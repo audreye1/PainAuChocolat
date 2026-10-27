@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#516597"
+    android:background="@drawable/stars"
+    tools:context=".SleepTrackerNewActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_sleepTrackerNew_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:backgroundTint="#7280D0"
+        app:fabCustomSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <EditText
+        android:id="@+id/editText_sleepTrackerNew_journalEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Enter any notes here!"
+        android:inputType="text"
+        android:textColor="#FDFCFC"
+        android:textColorHighlight="#F8F1F1"
+        android:textColorHint="#ABABD3"
+        app:layout_constraintBottom_toTopOf="@+id/button_sleepTrackerNew_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_sleepTrackerNew_bedtimeEntry" />
+
+    <Button
+        android:id="@+id/button_sleepTrackerNew_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#6AAEE4"
+        android:fontFamily="@font/baloo"
+        android:text="Save"
+        android:textColorLink="#6DAFDE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_sleepTrackerNew_TimeEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="How many hours did you sleep?"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="#FAF8F8"
+        android:textColorHighlight="#F8F1F1"
+        android:textColorHint="#A9A9D1"
+        app:layout_constraintBottom_toTopOf="@+id/editText_sleepTrackerNew_bedtimeEntry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePicker_sleepTrackerNew_dateEntry" />
+
+    <EditText
+        android:id="@+id/editText_sleepTrackerNew_bedtimeEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="0123456789:"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="When did you go to sleep? (HH:MM)"
+        android:inputType="text"
+        android:maxLength="5"
+        android:textColor="#FDFBFB"
+        android:textColorHighlight="#F8F1F1"
+        android:textColorHint="#A5A5CE"
+        app:layout_constraintBottom_toTopOf="@+id/editText_sleepTrackerNew_journalEntry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_sleepTrackerNew_TimeEntry" />
+
+    <DatePicker
+        android:id="@+id/datePicker_sleepTrackerNew_dateEntry"
+        android:layout_width="346dp"
+        android:layout_height="411dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFEF8"
+        android:backgroundTint="#FDFBF6"
+        android:calendarTextColor="#262222"
+        android:dayOfWeekBackground="#DB7D7D"
+        android:headerBackground="#74B6E0"
+        android:yearListSelectorColor="#4579AD"
+        app:layout_constraintBottom_toTopOf="@+id/editText_sleepTrackerNew_TimeEntry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+[
+  {
+    "name":"Chef Remy",
+    "title": "Not a rat ;)",
+    "description":"A nuclear physicist who went rogue after losing his funding. Chef Remy now has turned to applying quantum mechanics to baking croissants. Still passionate about science, he mutters equations as experiments with new flavors.",
+    "image":"chef"
+  },
+  {
+    "name":"Petite Ribbíte",
+    "title": "Cutest frog in Paris",
+    "description":"Petite Ribbite always had a passion for baking but other bakers would constantly underestimate him due to his size. Though this frog may be petite, Petite Ribbite has proved to have big ambitions and a large appetite!",
+    "image":"frog"
+  },
+  {
+    "name":"Oui Oui Baguette",
+    "title": "True frenchie",
+    "description":"After getting out of prison for stealing too many women’s hearts, Oui Oui Baguette is seeking to turn his life around by baking croissants!",
+    "image":"french"
+  },
+  {
+    "name":"Monsieur Quaso",
+    "title": "Dapper guy",
+    "description":"After quitting job due to lack of passion in finance, Monsieur Quaso moved to Paris to pursue his underlying passion of baking. Monsieur Quaso dreams of recreating Babushka’s croissants from his childhood to honor her passing.",
+    "image":"sir"
+  }
+]

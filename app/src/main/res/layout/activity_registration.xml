@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDF7FB">
+
+    <Button
+        android:id="@+id/button_registration_signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#6DBEE4"
+        android:fontFamily="@font/baloo"
+        android:text="Sign up"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_registration_confirmPassword" />
+
+    <EditText
+        android:id="@+id/editText_registration_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="#4A99BC"
+        android:textColorHighlight="#4693B3"
+        android:textColorHint="#73B2CE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_registration_name" />
+
+    <EditText
+        android:id="@+id/editText_registration_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#4A99BC"
+        android:textColorHighlight="#4693B3"
+        android:textColorHint="#73B2CE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_registration_username" />
+
+    <EditText
+        android:id="@+id/editText_registration_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#4A99BC"
+        android:textColorHighlight="#4693B3"
+        android:textColorHint="#73B2CE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_registration_email" />
+
+    <EditText
+        android:id="@+id/editText_registration_confirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:textColor="#4A99BC"
+        android:textColorHighlight="#4693B3"
+        android:textColorHint="#73B2CE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_registration_password" />
+
+    <EditText
+        android:id="@+id/editText_registration_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColor="#4A99BC"
+        android:textColorHighlight="#4693B3"
+        android:textColorHint="#73B2CE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_registration_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:backgroundTint="#67BAE0"
+        app:fabCustomSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

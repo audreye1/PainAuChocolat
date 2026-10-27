@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FocusSetUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView_focus_setup_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/purple_supplies" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_focus_setup_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:fabCustomSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <EditText
+        android:id="@+id/editText_focus_setup_timeEntry"
+        android:layout_width="320dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="121dp"
+        android:background="#B854B6"
+        android:backgroundTint="#FBE6E6"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Enter time in minutes"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_focus_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_focus_setup_instructions" />
+
+    <TextView
+        android:id="@+id/textView_focus_setup_instructions"
+        android:layout_width="337dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="#0068A3DB"
+        android:fontFamily="@font/baloo"
+        android:shadowColor="#F2A2A2"
+        android:text="How long would you like to focus?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editText_focus_setup_timeEntry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_focus_start"
+        android:layout_width="220dp"
+        android:layout_height="133dp"
+        android:layout_marginBottom="32dp"
+        android:background="#F08096"
+        android:backgroundTintMode="src_over"
+        android:fontFamily="@font/baloo"
+        android:foregroundTint="#D17070"
+        android:text="Start"
+
+        android:textColor="#FFFDFD"
+        android:textColorHighlight="#E47373"
+        android:textColorHint="#F8A3A3"
+        android:textColorLink="#DC8791"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_focus_setup_timeEntry"
+        app:rippleColor="#D54C4C" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

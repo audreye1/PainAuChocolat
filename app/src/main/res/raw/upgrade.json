@@ -1,0 +1,22 @@
+[
+  {
+    "name":"Rundown",
+    "description":"A few leaks here and there and could use a bit of sprucing up, but functional. Gotta start somewhere!",
+    "image":"rundown_exterior"
+  },
+  {
+    "name":"Basic",
+    "description":"Comes with a fresh coat of paint and some plants. Also has working lights now. Not too fancy, but being standard is better than nothing!",
+    "image":"basic_exterior"
+  },
+  {
+    "name":"Elevated",
+    "description":"Has outdoor seating and taller plants. It is fancy, crispy, luxurious, and well illuminated!",
+    "image":"elevated_exterior"
+  },
+  {
+    "name":"Classy",
+    "description":"More seats galore! Very pristine and is the equivalent of fine dining for bakeries. Quite expensive, but well worth the cost!",
+    "image":"classy_exterior"
+  }
+]
